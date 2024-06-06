@@ -4,14 +4,14 @@ const router = express.Router();
 // RETORNA TODOS OS PEDIDOS
 router.get('/', (req, res, next) => {
     res.status(200).send({
-       mensagem: 'Usando o GET dentro da rota de pedidos'
+       mensagem: 'Retorna todos os pedidos'
     });
  });
 
  // INSERE UM PEDIDO
  router.post('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Usando o POST dentro da rota de pedidos'
+        mensagem: 'Pedido inserido'
     });
  });
 
@@ -34,7 +34,7 @@ router.get('/', (req, res, next) => {
  // ALTERA UM PEDIDO
  router.patch('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Usando o PATCH dentro da rota de pedidos'
+        mensagem: 'Pedido alterado'
     });
  });
 
